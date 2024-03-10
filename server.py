@@ -134,7 +134,7 @@ async def bugsGetWorked():
     cursor.execute("SELECT * FROM `bugs` WHERE status='open'")
     bugs = cursor.fetchall()
     if len(bugs)>0:
-        return {"status":str(bugs)}
+        return {"success":str(bugs)}
     else:
         return {"status":"no open bugs"}
 
@@ -144,7 +144,7 @@ async def bugsGetClosed():
     cursor.execute("SELECT * FROM `bugs` WHERE status='fixed'")
     bugs = cursor.fetchall()
     if len(bugs)>0:
-        return {"status":str(bugs)}
+        return {"success":str(bugs)}
     else:
         return {"status":"no fixed bugs"}
 
