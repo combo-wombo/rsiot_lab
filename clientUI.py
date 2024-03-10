@@ -1,9 +1,6 @@
 from flask import Flask, request, redirect, render_template
 import requests
 from markupsafe import escape
-from flask_wtf import FlaskForm
-from wtforms import StringField
-from wtforms.validators import DataRequired
 import json
 
 SERVER_URL = "http://192.168.0.150:8000/"
