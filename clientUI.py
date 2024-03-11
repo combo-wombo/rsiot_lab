@@ -3,7 +3,7 @@ import requests
 from markupsafe import escape
 import json
 
-SERVER_URL = "http://192.168.0.150:8000/"
+SERVER_URL = "http://127.0.0.1:8000/"
 global userid, useraccess
 userid = None
 useraccess = None

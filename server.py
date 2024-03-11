@@ -18,7 +18,7 @@ global db
 db = mysql.connector.connect(
   host="localhost",
   user="root",
-  database="rsiot_lab"
+  database="rsiot_lab_test"
 )
 print("connected to MySQL at "+str(db.server_host)+":"+str(db.server_port))
 
