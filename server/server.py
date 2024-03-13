@@ -16,9 +16,10 @@ async def redirect_root_to_docs():
 #=====================================
 global db
 db = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  database="rsiot_lab"
+  host="10.162.0.184",
+  user="admin123",
+  password="pass",
+  database="rsiot_lab_test"
 )
 print("connected to MySQL at "+str(db.server_host)+":"+str(db.server_port))
 
