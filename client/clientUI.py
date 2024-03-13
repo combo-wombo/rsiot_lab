@@ -3,7 +3,7 @@ import requests
 from markupsafe import escape
 import json
 
-SERVER_URL = "http://127.0.0.1:8000/"
+SERVER_URL = "http://server.docker:8000/"
 global userid, useraccess
 userid = None
 useraccess = None
@@ -312,4 +312,4 @@ def register_admin_post():
         return render_template("template.html", content=returned)
         
 if __name__=='__main__':
-    app.run()
+    app.run(host="0.0.0.0", debug=True)
